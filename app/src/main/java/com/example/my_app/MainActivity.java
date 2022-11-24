@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 tvText.setText("");
             }
             catch (ActivityNotFoundException e) {
-                Toast.makeText(getApplicationContext(), "Your device doesn't support Speech to Text", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Your device does not support Speech to Text", Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
             }
         });
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     if (throwable != null) {
                         Log.e("mqtt:", "There's some error when connect");
                     } else {
-                        Log.e("mqtt:", "Connect oke hihi");
+                        Log.e("mqtt:", "Connect successful");
                     }
                 });
     }
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("mqtt:", "There's some error when publish");
                     }
                     else {
-                        Log.e("mqtt:", "Publish oke r nha");
+                        Log.e("mqtt:", "Publish successful");
                     }
                 });
     }
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("mqtt:", "There's some error when subcribe");
                     }
                     else {
-                        Log.e("mqtt:", "Subcribe oke roi nha");
+                        Log.e("mqtt:", "Subcribe successful");
                     }
                 });
 

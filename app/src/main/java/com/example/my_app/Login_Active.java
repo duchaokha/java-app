@@ -43,7 +43,7 @@ public class Login_Active extends AppCompatActivity {
         String password = inputPassword.getText().toString();
 
         if (email.isEmpty() || !email.contains("@")) {
-            showError(inputEmail , "It isn't email!");
+            showError(inputEmail , "It is not an email!");
         }
         else if(password.isEmpty() || password.length() < 7) {
             showError(inputPassword, "Password minimum 8 character");
@@ -51,7 +51,7 @@ public class Login_Active extends AppCompatActivity {
         else
         {
             mLoadingBar.setTitle("Loading title");
-            mLoadingBar.setMessage("please wat !");
+            mLoadingBar.setMessage("please wait!");
             mLoadingBar.setCanceledOnTouchOutside(false); // cancel defaule behavier
             mLoadingBar.show();
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {

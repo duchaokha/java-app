@@ -81,10 +81,7 @@ public class RegisterActive extends AppCompatActivity {
                     if(task.isSuccessful())
                     {
                         mLoadingBar.dismiss();
-                        Toast.makeText(RegisterActive.this, "Suscessfully", Toast.LENGTH_SHORT).show();
-//                        Intent intent = new Intent(RegisterActive.this, MainActivity.class);
-//                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
-//                        startActivity(intent);
+                        Toast.makeText(RegisterActive.this, "Successfully", Toast.LENGTH_SHORT).show();
                     }
                     else
                     {
